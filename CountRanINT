@@ -1,0 +1,28 @@
+//Shrestha
+
+import java.util.Scanner;
+
+public class CountRanINT{
+  public static void main(String []args){
+    Scanner input = new Scanner(System.in);
+    int[] counts = new int[10];
+    
+    System.out.print("The hundred Random Integers are:\n\n");
+    
+    for (int count = 0; count < 100; count++){
+     int Rnumber = (int)(Math.random()* 10);
+     System.out.print( Rnumber + "  ");
+     counts[Rnumber]++;
+     
+     if ((count + 1) % 10 ==0){
+       System.out.println();}}
+       
+    System.out.println("\n----------------\n The count for each number is:");
+  
+    for (int i = 0; i < counts.length; i++) {
+      System.out.println("Number " + i + " appeared " + counts[i] + " times.");
+  }
+ }
+} 
+  
+ 
