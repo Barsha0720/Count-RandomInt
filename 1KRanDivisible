@@ -1,0 +1,19 @@
+//   Shrestha
+
+import java.util.Scanner;
+ public class 1KRanDivisible{
+  public static void main (String [] args){
+  Scanner input = new Scanner(System.in);
+  final int NUMBERS_PER_LINE = 10;
+  System.out.print("The numbers divisible by both 5 and 6 are:\n");
+  int count = 0;
+ 
+  for (int i = 100; i<=1000; i++)
+   {if (i % 5 == 0 && i % 6 == 0)
+    {count++;
+      System.out.print(i + "  ");
+     if (count % NUMBERS_PER_LINE == 0)
+     System.out.println(); }
+   }
+ }
+}   
